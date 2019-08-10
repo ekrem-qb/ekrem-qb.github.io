@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Minecraft Font';
+    src: url('./fonts/minecraft_font.ttf');
+}
+
+body {
+    background: url(./img/bg.png);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Minecraft Font', sans-serif;
+}
+
+h1#coming_soon {
+    width: 100%;
+    text-align: center;
+}
