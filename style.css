@@ -3,8 +3,13 @@
     src: url('./fonts/minecraft_font.ttf');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: url(./img/bg.png);
+    background-size: 200%;
     margin: 0;
 }
 
@@ -13,18 +18,29 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    background: url(./img/navbar_bg.png);
+    height: 25vw;
+    background: url(./img/navbar_bg.png) no-repeat;
+    background-size: 200%;
 }
 
 #logo {
-    margin: 6em;
-    width: 32em;
-    height: 64.36px;
+    width: 100%;
+    max-width: 320px;
+    height: 12vw;
+    margin: auto;
+    background: url(./img/logo.png) no-repeat;
+    background-size: contain;
+    background-position-x: center;
 }
 
 #google_play img {
-    width: 32em;
-    margin: 6em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 360px;
 }
 
 h1,
@@ -33,4 +49,24 @@ h3,
 h4,
 h5 {
     font-family: 'Minecraft Font', sans-serif;
+}
+
+
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-size: auto;
+    }
+
+    .navbar {
+        background-size: auto;
+    }
+
+    #logo {
+
+    }
+    
+    #google_play img {
+        
+    }
 }
