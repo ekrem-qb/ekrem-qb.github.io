@@ -5,13 +5,32 @@
 
 body {
     background: url(./img/bg.png);
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Minecraft Font', sans-serif;
-}
-
-h1#coming_soon {
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    text-align: center;
+    background: url(./img/navbar_bg.png);
+}
+
+#logo {
+    margin: 6em;
+    width: 32em;
+    height: 64.36px;
+}
+
+#google_play img {
+    width: 32em;
+    margin: 6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Minecraft Font', sans-serif;
 }
