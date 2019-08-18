@@ -5,6 +5,7 @@
 
 * {
     box-sizing: border-box;
+    outline: 0 !important;
 }
 
 body {
@@ -14,12 +15,18 @@ body {
 
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
     height: 25vw;
     background: url(./img/navbar_bg.png) no-repeat;
     background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
 }
 
 #logo {
@@ -32,14 +39,24 @@ body {
     background-position: center;
 }
 
-#google_play img {
+#google_play {
     position: absolute;
-    bottom: 0;
+    bottom: 4%;
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
-    max-width: 360px;
+    width: 84%;
+    height: inherit;
+    background: url(./img/google_play.png) no-repeat center;
+    background-size: contain;
+    box-shadow: 0 0 40px 5px black;
+    border-radius: 10px;
+    transition: .1s ease-in-out;
+}
+
+#google_play:active {
+    transform: scale(.95);
+    box-shadow: 0 0 0px 0px black;
 }
 
 h1,
@@ -58,16 +75,31 @@ h5 {
         height: 13vw;
     }
 
-    #google_play {
-        margin: auto;
+    #logo {
+        margin: auto 0;
     }
 
-    #google_play img {
+    #google_play {
+        bottom: 0;
+        margin: auto 0;
         position: relative;
-        max-width: 230px;
+        max-width: 180px;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    
+@media only screen and (min-width: 1440px) {
+    #logo {
+        max-width: 480px;
+    }
+
+    #google_play img {
+        max-width: 360px;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
 }
