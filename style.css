@@ -75,6 +75,10 @@ h5 {
         height: 13vw;
     }
 
+    .container {
+        padding: 0 32px;
+    }
+
     #logo {
         margin: auto 0;
     }
@@ -90,16 +94,27 @@ h5 {
     }
 }
 
-@media only screen and (min-width: 1440px) {
-    #logo {
-        max-width: 480px;
+@media only screen and (orientation: portrait) {
+    @media only screen and (min-width: 768px) {
+        #logo {
+            max-width: 480px;
+        }
+
+        #google_play {
+            max-width: 360px;
+            height: 108px;
+        }
     }
 
-    #google_play img {
-        max-width: 360px;
+    @media only screen and (min-width: 1024px) {
+        #logo {
+            max-width: 640px;
+        }
     }
+}
 
+@media only screen and (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1200px;
     }
 }
