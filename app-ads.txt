@@ -1,3 +1,5 @@
+google.com, pub-3611829525893744, DIRECT, f08c47fec0942fa0
+
 #Last updated November 13th 2020
 #Appodeal
 appodeal.com, 115578, DIRECT
@@ -541,5 +543,3 @@ rubiconproject.com, 14558, RESELLER, 0bfd66d529a55807
 silvermob.com,419,RESELLER
 #OneTag
 onetag.com, 6410327ec8319f0, DIRECT
-
-google.com, pub-3611829525893744, DIRECT, f08c47fec0942fa0
