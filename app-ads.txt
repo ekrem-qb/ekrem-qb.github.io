@@ -5,6 +5,7 @@ appodeal.com, 115578, DIRECT
 bidmachine.io, 115578, DIRECT
 #AdMob
 #Copy YOUR_ADMOB_APP_ID entry from your Admob dashboard
+google.com, pub-3611829525893744, DIRECT, f08c47fec0942fa0
 google.com, pub-4272971530084173, DIRECT, f08c47fec0942fa0
 #Notsy
 google.com, pub-4272971530084173, RESELLER, f08c47fec0942fa0
